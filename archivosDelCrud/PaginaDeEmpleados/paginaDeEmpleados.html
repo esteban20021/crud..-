@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD de Empleados</title>
+    <link rel="stylesheet" href="empleado.css">
+</head>
+<body>
+    <button onclick="volver()">Volver</button>
+    <br>
+    <h1>Empleados</h1>
+    <div id="crud">
+        <div id="form">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre">
+            <label for="posicion">Cargo:</label>
+            <input type="text" id="posicion">
+            <button onclick="agregarEmpleado()">Agregar Empleado</button>
+        </div>
+        <div id="employees">
+            <h2>Listado de Empleados</h2>
+            <ul id="listaDeEmpleados"></ul>
+        </div>
+    </div>
+
+    <script src="empleado.js"></script>
+</body>
+</html>

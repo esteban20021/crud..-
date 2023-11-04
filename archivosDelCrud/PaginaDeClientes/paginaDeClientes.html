@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD de Clientes</title>
+    <link rel="stylesheet" href="clientes.css">
+</head>
+<body>
+    <button onclick="volver()">Volver</button>
+    <br>
+    <h1>Clientes</h1>
+    <div id="crud">
+        <div id="form">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name">
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email">
+            <button onclick="addClient()">Agregar Cliente</button>
+        </div>
+        <div id="clients">
+            <h2>Listado de Clientes</h2>
+            <ul id="clientList"></ul>
+        </div>
+    </div>
+
+    <script src="clientes.js"></script>
+</body>
+</html>
